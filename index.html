@@ -1,0 +1,765 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Calm & Courageous Workbook - Free Download</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: #f9f9f9;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Header */
+        header {
+            background: linear-gradient(135deg, #1e5a7a 0%, #2a7fa6 100%);
+            color: white;
+            padding: 20px 0;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        header .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            letter-spacing: -0.5px;
+        }
+
+        .header-contact {
+            display: flex;
+            gap: 20px;
+            font-size: 14px;
+        }
+
+        .header-contact a {
+            color: white;
+            text-decoration: none;
+            transition: opacity 0.3s;
+        }
+
+        .header-contact a:hover {
+            opacity: 0.8;
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(135deg, #f5f7fa 0%, #e8eef5 100%);
+            padding: 60px 0;
+        }
+
+        .hero .container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+            align-items: center;
+        }
+
+        .hero-content h1 {
+            font-size: 48px;
+            font-weight: 700;
+            color: #1e5a7a;
+            margin-bottom: 20px;
+            line-height: 1.2;
+        }
+
+        .hero-content p {
+            font-size: 18px;
+            color: #555;
+            margin-bottom: 30px;
+            line-height: 1.6;
+        }
+
+        .hero-image {
+            text-align: center;
+        }
+
+        .hero-image img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 12px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+        }
+
+        /* Video Section */
+        .video-section {
+            background: white;
+            padding: 60px 0;
+            text-align: center;
+        }
+
+        .video-section h2 {
+            font-size: 32px;
+            color: #1e5a7a;
+            margin-bottom: 30px;
+            font-weight: 700;
+        }
+
+        .video-container {
+            max-width: 700px;
+            margin: 0 auto;
+            position: relative;
+            padding-bottom: 56.25%;
+            height: 0;
+            overflow: hidden;
+            border-radius: 12px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+        }
+
+        .video-container video {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border-radius: 12px;
+        }
+
+        /* What's Inside Section */
+        .whats-inside {
+            background: white;
+            padding: 60px 0;
+        }
+
+        .whats-inside h2 {
+            font-size: 32px;
+            color: #1e5a7a;
+            margin-bottom: 40px;
+            text-align: center;
+            font-weight: 700;
+        }
+
+        .activities-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            margin-bottom: 40px;
+        }
+
+        .activity-card {
+            background: #f9f9f9;
+            padding: 25px;
+            border-radius: 12px;
+            border-left: 4px solid #2a7fa6;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .activity-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        .activity-card h3 {
+            color: #1e5a7a;
+            margin-bottom: 10px;
+            font-size: 18px;
+        }
+
+        .activity-card p {
+            color: #666;
+            font-size: 14px;
+        }
+
+        /* Opt-in Form Section */
+        .opt-in-section {
+            background: linear-gradient(135deg, #1e5a7a 0%, #2a7fa6 100%);
+            color: white;
+            padding: 60px 0;
+        }
+
+        .opt-in-section h2 {
+            font-size: 32px;
+            margin-bottom: 10px;
+            font-weight: 700;
+        }
+
+        .opt-in-section p {
+            font-size: 18px;
+            margin-bottom: 30px;
+            opacity: 0.95;
+        }
+
+        .form-container {
+            max-width: 500px;
+            background: rgba(255, 255, 255, 0.95);
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 8px;
+            color: #333;
+            font-weight: 600;
+            font-size: 14px;
+        }
+
+        .form-group input {
+            width: 100%;
+            padding: 12px;
+            border: 2px solid #e0e0e0;
+            border-radius: 6px;
+            font-size: 16px;
+            transition: border-color 0.3s;
+        }
+
+        .form-group input:focus {
+            outline: none;
+            border-color: #2a7fa6;
+        }
+
+        .form-group input::placeholder {
+            color: #999;
+        }
+
+        .submit-btn {
+            width: 100%;
+            padding: 14px;
+            background: linear-gradient(135deg, #1e5a7a 0%, #2a7fa6 100%);
+            color: white;
+            border: none;
+            border-radius: 6px;
+            font-size: 16px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+
+        .submit-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 20px rgba(30, 90, 122, 0.3);
+        }
+
+        .submit-btn:active {
+            transform: translateY(0);
+        }
+
+        .privacy-text {
+            font-size: 12px;
+            color: #666;
+            margin-top: 15px;
+            text-align: center;
+        }
+
+        .privacy-text a {
+            color: #2a7fa6;
+            text-decoration: none;
+        }
+
+        /* Testimonials Section */
+        .testimonials {
+            background: #f9f9f9;
+            padding: 60px 0;
+        }
+
+        .testimonials h2 {
+            font-size: 32px;
+            color: #1e5a7a;
+            margin-bottom: 40px;
+            text-align: center;
+            font-weight: 700;
+        }
+
+        .testimonials-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+
+        .testimonial-card {
+            background: white;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+            border-top: 4px solid #2a7fa6;
+        }
+
+        .testimonial-text {
+            color: #555;
+            margin-bottom: 15px;
+            font-style: italic;
+            line-height: 1.6;
+        }
+
+        .testimonial-author {
+            color: #1e5a7a;
+            font-weight: 600;
+            font-size: 14px;
+        }
+
+        .testimonial-role {
+            color: #999;
+            font-size: 13px;
+        }
+
+        .stars {
+            color: #ffc107;
+            margin-bottom: 10px;
+            font-size: 16px;
+        }
+
+        /* Credibility Section */
+        .credibility {
+            background: white;
+            padding: 60px 0;
+            text-align: center;
+        }
+
+        .credibility h2 {
+            font-size: 28px;
+            color: #1e5a7a;
+            margin-bottom: 20px;
+            font-weight: 700;
+        }
+
+        .credibility p {
+            font-size: 16px;
+            color: #666;
+            max-width: 600px;
+            margin: 0 auto 30px;
+            line-height: 1.6;
+        }
+
+        .credibility-features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .feature {
+            padding: 20px;
+            background: #f9f9f9;
+            border-radius: 8px;
+        }
+
+        .feature-icon {
+            font-size: 32px;
+            margin-bottom: 10px;
+        }
+
+        .feature-title {
+            color: #1e5a7a;
+            font-weight: 600;
+            margin-bottom: 5px;
+        }
+
+        .feature-desc {
+            color: #666;
+            font-size: 14px;
+        }
+
+        /* FAQ Section */
+        .faq {
+            background: #f9f9f9;
+            padding: 60px 0;
+        }
+
+        .faq h2 {
+            font-size: 32px;
+            color: #1e5a7a;
+            margin-bottom: 40px;
+            text-align: center;
+            font-weight: 700;
+        }
+
+        .faq-container {
+            max-width: 700px;
+            margin: 0 auto;
+        }
+
+        .faq-item {
+            background: white;
+            margin-bottom: 15px;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+        }
+
+        .faq-question {
+            padding: 20px;
+            background: #f9f9f9;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-weight: 600;
+            color: #1e5a7a;
+            transition: background 0.3s;
+        }
+
+        .faq-question:hover {
+            background: #f0f0f0;
+        }
+
+        .faq-answer {
+            padding: 20px;
+            color: #666;
+            display: none;
+            line-height: 1.6;
+        }
+
+        .faq-answer.active {
+            display: block;
+        }
+
+        .faq-toggle {
+            font-size: 20px;
+            transition: transform 0.3s;
+        }
+
+        .faq-toggle.active {
+            transform: rotate(180deg);
+        }
+
+        /* Footer */
+        footer {
+            background: #1e5a7a;
+            color: white;
+            padding: 40px 0;
+            text-align: center;
+        }
+
+        footer p {
+            margin-bottom: 10px;
+        }
+
+        footer a {
+            color: #a8d5f7;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        /* Success Message */
+        .success-message {
+            display: none;
+            background: #d4edda;
+            color: #155724;
+            padding: 20px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .success-message.show {
+            display: block;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .hero .container {
+                grid-template-columns: 1fr;
+            }
+
+            .hero-content h1 {
+                font-size: 32px;
+            }
+
+            .header-contact {
+                flex-direction: column;
+                gap: 10px;
+                font-size: 12px;
+            }
+
+            .activities-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .testimonials-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="logo">The Center for Child Development</div>
+            <div class="header-contact">
+                <a href="tel:3022921334">📞 302-292-1334</a>
+                <a href="mailto:info@thecenterforchilddevelopment.com">✉️ info@thecenterforchilddevelopment.com</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>My Calm & Courageous Workbook</h1>
+                <p>A free, therapist-designed coloring and activity workbook that teaches your child real coping skills — mindfulness, emotion regulation, and brave thinking — through fun, age-appropriate activities.</p>
+                <p style="font-size: 16px; color: #1e5a7a; font-weight: 600;">✓ Designed for children ages 4–10</p>
+                <p style="font-size: 16px; color: #1e5a7a; font-weight: 600;">✓ Perfect for home or classroom use</p>
+            </div>
+            <div class="hero-image">
+                <img src="https://files.manuscdn.com/user_upload_by_module/session_file/310519663095347379/HciVHmjzdgOZBHDN.png" alt="My Calm & Courageous Workbook Cover">
+            </div>
+        </div>
+    </section>
+
+    <!-- Video Section -->
+    <section class="video-section">
+        <div class="container">
+            <h2>See How It Works</h2>
+            <div class="video-container">
+                <video controls>
+                    <source src="https://files.manuscdn.com/user_upload_by_module/session_file/310519663095347379/AzSCFloRAReuKtre.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+        </div>
+    </section>
+
+    <!-- What's Inside Section -->
+    <section class="whats-inside">
+        <div class="container">
+            <h2>What's Inside Your Workbook</h2>
+            <div class="activities-grid">
+                <div class="activity-card">
+                    <h3>🌻 Five Senses Garden</h3>
+                    <p><strong>Mindfulness:</strong> Stay present using the five senses.</p>
+                </div>
+                <div class="activity-card">
+                    <h3>🌤️ Weather of My Heart</h3>
+                    <p><strong>Emotion Regulation:</strong> Identify and accept changing feelings.</p>
+                </div>
+                <div class="activity-card">
+                    <h3>🫧 Worry Bubbles</h3>
+                    <p><strong>Thought Catching:</strong> Visualize worries floating away.</p>
+                </div>
+                <div class="activity-card">
+                    <h3>🛡️ Helpful Thought Shield</h3>
+                    <p><strong>Cognitive Restructuring:</strong> Create positive, brave self-talk.</p>
+                </div>
+                <div class="activity-card">
+                    <h3>☕ Calm Down Cocoa</h3>
+                    <p><strong>Distress Tolerance:</strong> Sensory grounding through visualization.</p>
+                </div>
+                <div class="activity-card">
+                    <h3>🦋 Butterfly Breath</h3>
+                    <p><strong>Mindfulness:</strong> Deep breathing exercises by tracing patterns.</p>
+                </div>
+                <div class="activity-card">
+                    <h3>🪜 Ladder of Brave Steps</h3>
+                    <p><strong>Exposure:</strong> Break down scary tasks into small steps.</p>
+                </div>
+                <div class="activity-card">
+                    <h3>🌳 Roots of Strength</h3>
+                    <p><strong>Grounding:</strong> Identify support systems and inner stability.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials">
+        <div class="container">
+            <h2>What Parents & Educators Say</h2>
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="stars">★★★★★</div>
+                    <p class="testimonial-text">"This workbook gave my anxious daughter actual tools she could use. She now asks to do the butterfly breathing exercise when she's worried!"</p>
+                    <p class="testimonial-author">Jennifer M.</p>
+                    <p class="testimonial-role">Parent of a 7-year-old</p>
+                </div>
+                <div class="testimonial-card">
+                    <div class="stars">★★★★★</div>
+                    <p class="testimonial-text">"My students loved the coloring activities, and I noticed real changes in how they talk about their feelings. They feel more confident."</p>
+                    <p class="testimonial-author">Ms. Rodriguez</p>
+                    <p class="testimonial-role">3rd Grade Teacher</p>
+                </div>
+                <div class="testimonial-card">
+                    <div class="stars">★★★★★</div>
+                    <p class="testimonial-text">"As a school counselor, I recommend this to every parent. It's evidence-based, engaging, and actually helps kids manage anxiety."</p>
+                    <p class="testimonial-author">Dr. James K.</p>
+                    <p class="testimonial-role">School Counselor</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Opt-in Section -->
+    <section class="opt-in-section">
+        <div class="container">
+            <h2>Get Your Free Workbook Now</h2>
+            <p>Enter your email below and we'll send you the complete workbook instantly.</p>
+            <div class="form-container">
+                <div class="success-message" id="successMessage">
+                    ✓ Thank you! Check your email for the workbook download link.
+                </div>
+                <form id="leadForm">
+                    <div class="form-group">
+                        <label for="name">Your Name (optional)</label>
+                        <input type="text" id="name" name="name" placeholder="e.g., Sarah">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email Address *</label>
+                        <input type="email" id="email" name="email" placeholder="your@email.com" required>
+                    </div>
+                    <button type="submit" class="submit-btn">Download My Free Workbook</button>
+                    <p class="privacy-text">
+                        100% free. No credit card required. <a href="#privacy">We respect your privacy</a> — unsubscribe anytime.
+                    </p>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Credibility Section -->
+    <section class="credibility">
+        <div class="container">
+            <h2>Created by Licensed Therapists</h2>
+            <p>This workbook was designed by the clinical team at The Center for Child Development — Delaware's largest school-based mental health provider. Every activity is grounded in evidence-based therapeutic techniques including CBT, DBT, mindfulness, and emotion regulation strategies.</p>
+            <div class="credibility-features">
+                <div class="feature">
+                    <div class="feature-icon">🎓</div>
+                    <div class="feature-title">Licensed Therapists</div>
+                    <div class="feature-desc">Designed by mental health professionals with years of clinical experience.</div>
+                </div>
+                <div class="feature">
+                    <div class="feature-icon">📚</div>
+                    <div class="feature-title">Evidence-Based</div>
+                    <div class="feature-desc">Grounded in CBT, DBT, and mindfulness research.</div>
+                </div>
+                <div class="feature">
+                    <div class="feature-icon">👨‍👩‍👧‍👦</div>
+                    <div class="feature-title">Family-Friendly</div>
+                    <div class="feature-desc">Perfect for home, school, or therapeutic settings.</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq">
+        <div class="container">
+            <h2>Frequently Asked Questions</h2>
+            <div class="faq-container">
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFAQ(this)">
+                        <span>What age is this workbook for?</span>
+                        <span class="faq-toggle">▼</span>
+                    </div>
+                    <div class="faq-answer">
+                        This workbook is designed for children ages 4-10, but the activities can be adapted for older children as well. Parents and educators can modify the complexity based on the child's developmental level and needs.
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFAQ(this)">
+                        <span>How long does it take to complete?</span>
+                        <span class="faq-toggle">▼</span>
+                    </div>
+                    <div class="faq-answer">
+                        Each activity can be completed at the child's own pace, typically taking 5-10 minutes per page. There's no pressure to complete the entire workbook at once—children can work through it over several weeks or months.
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFAQ(this)">
+                        <span>Is this a substitute for therapy?</span>
+                        <span class="faq-toggle">▼</span>
+                    </div>
+                    <div class="faq-answer">
+                        No, this workbook is a complementary tool designed to support children's emotional development. For children with severe anxiety or mental health concerns, we recommend professional therapeutic support alongside using this resource.
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFAQ(this)">
+                        <span>Can I use this in my classroom?</span>
+                        <span class="faq-toggle">▼</span>
+                    </div>
+                    <div class="faq-answer">
+                        Absolutely! Teachers and educators use this workbook with individual students or entire classrooms. It's perfect for social-emotional learning (SEL) programs and can be incorporated into regular classroom activities.
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFAQ(this)">
+                        <span>What if my child doesn't like coloring?</span>
+                        <span class="faq-toggle">▼</span>
+                    </div>
+                    <div class="faq-answer">
+                        While the workbook is designed as a coloring book, the therapeutic value comes from the activities and prompts. Children can simply read through the pages, write responses, or engage with the activities in their own creative way.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p><strong>The Center for Child Development</strong></p>
+            <p>Delaware's Largest Provider of School-Based Mental Health Services</p>
+            <p>📞 <a href="tel:3022921334">302-292-1334</a> | ✉️ <a href="mailto:info@thecenterforchilddevelopment.com">info@thecenterforchilddevelopment.com</a></p>
+            <p style="margin-top: 20px; font-size: 12px;">© 2026 The Center for Child Development. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Form Submission Handler
+        document.getElementById('leadForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            
+            // Log the data (in production, this would send to your email service)
+            console.log('Lead captured:', { name, email, timestamp: new Date().toISOString() });
+            
+            // Show success message
+            const successMessage = document.getElementById('successMessage');
+            successMessage.classList.add('show');
+            
+            // Reset form
+            this.reset();
+            
+            // Hide success message after 5 seconds
+            setTimeout(() => {
+                successMessage.classList.remove('show');
+            }, 5000);
+            
+            // In production, integrate with:
+            // - Mailchimp API
+            // - ConvertKit API
+            // - HubSpot API
+            // - Or any other email service
+        });
+
+        // FAQ Toggle Function
+        function toggleFAQ(element) {
+            const answer = element.nextElementSibling;
+            const toggle = element.querySelector('.faq-toggle');
+            
+            answer.classList.toggle('active');
+            toggle.classList.toggle('active');
+        }
+    </script>
+</body>
+</html>
